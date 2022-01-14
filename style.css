@@ -1,71 +1,150 @@
 body{
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Spline Sans', sans-serif;
     margin: 0;
 }
-section{
-    height: 500px;
-    padding-bottom: 200px;
+h1{
+    font-size: 50px;
+    letter-spacing: 3px;
+}
+h2{
+    font-size: 40px;
+}
+p{
+    color: gray;
+    line-height: 1.5rem;
 }
 .top-banner{
-    background-image: url("images/top-banner.png") ;
+    background-image: url("images/top-banner.png");
     background-repeat: no-repeat;
+}
+.container-fixgibale{
+    display: flex;
+    margin-bottom: 100px;
 }
 .half-width{
     width: 40%;
-    float: left;
-    margin-left: 5%;
+    margin-left: 4%;
     padding-left: 2%;
 }
 .half-width img{
     width: 100%;
 }
-h1{
-    font-size: 50px;
-}
-p{
-    color: dimgray;
-}
 .orange-highlight{
     color: orange;
 }
-.anchor-button{
+.ancor-btn{
     text-decoration: none;
-    background: linear-gradient(45deg,lightsalmon,tomato);
-    padding: 10px 20px;
     color: white;
-    border-radius: 5px;
     font-weight: 700;
-    text-transform: uppercase;
-}
-h2{
-    font-size: 40px;
+    padding: 10px 20px;
+    background-image: linear-gradient(45deg, lightsalmon,tomato);
+    border-radius: 5px;
 }
 .dream-area{
-    background-image: url("images/dream-bg.png");
+    background-image: url(images/dream-bg.png);
     background-repeat: no-repeat;
     background-position: right;
 }
 .experiences-area{
-    background-image: url("images/exp-bg.png");
+    background-image: url(images/exp-bg.png);
     background-repeat: no-repeat;
     background-position: left;
 }
-.single-experiences{
-    box-shadow: 10px 10px 30px gray;
+.experience-area-half{
+    box-shadow: 10px 10px 40px gray;
     border-radius: 5px;
-    height: 80%;
+    padding-left: 50px;
+    height: 300px;
 }
-#full-stack{
+#full-stack-dev{
     border-left: 7px solid ;
-    border-image: linear-gradient(180deg, lightsalmon, tomato);
+    border-image: linear-gradient(lightsalmon, tomato);
     border-image-slice: 1;
+    
 }
-#baby-dev{
+#baby-web{
     border-left: 7px solid ;
-    border-image: linear-gradient(180deg, blue,cyan );
+    border-image: linear-gradient(180deg, blue, cyan);
     border-image-slice: 1;
 }
 footer p{
     text-align: center;
-    font-size: 12;
 }
+
+/*-----------------
+ Media Qurres
+ -------------------- */
+
+ /* Mobile Divies */
+
+ @media only screen and (max-width: 688px) {
+    h1{
+        font-size: 30px;}
+    h2{
+        font-size: 25px;
+    }
+    p{
+        line-height: 1.2rem;
+        width: 80%;
+    }
+    .container-fixgibale{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .half-width{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    .half-width img{
+        width: 70%;
+    }
+    .ancor-btn{
+        font-size: 14px;
+    }
+    #full-stack-dev{
+       width: 70%;
+        
+    }
+    #baby-web{
+        width: 70%;
+
+    }
+ }
+
+ @media (min-width: 689px) and (max-width: 992px) {
+    h1{
+        font-size: 35px;
+    }
+    h2{
+        font-size: 30px;
+    }
+    p{
+        line-height: 1.3rem;
+        width: 80%;
+    }
+    .container-fixgibale{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .half-width{
+        width: 90%;
+        margin-bottom: 40px;
+    }
+    .half-width img{
+        width: 80%;
+    }
+    .ancor-btn{
+        font-size: 15px;
+    }
+    #full-stack-dev{
+       width: 80%;
+        
+    }
+    #baby-web{
+        width: 80%;
+
+    }
+     
+ }
